@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Funções com Cálculo</title>
+</head>
+<body>
+    <h1> Calculadora</h1>
+    <div id="resultado"></div>
+
+    <script>
+        function calcular(a, b) {
+            let saida = document.getElementById("resultado");
+            
+            saida.innerHTML += "Cálculos com " + a + " e " + b + "<br>";
+            saida.innerHTML += "Soma: " + (a + b) + "<br>";
+            saida.innerHTML += "Subtração: " + (a - b) + "<br>";
+            saida.innerHTML += "Multiplicação: " + (a * b) + "<br>";
+            saida.innerHTML += "Divisão: " + (a / b) + "<br><br>";
+        }
+
+        // 👇 AQUI você coloca os valores de a e b
+        calcular(10, 2);     // a = 10, b = 2
+        calcular(100, 4);    // a = 100, b = 4
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h2>Calculadora</h2>
+    <div id="resultado"></div>
+
+    <script>
+        function somar(a, b) {
+            return a + b;
+        }
+
+        function subtrair(a, b) {
+            return a - b;
+        }
+
+        function multiplicar(a, b) {
+            return a * b;
+        }
+
+        function dividir(a, b) {
+            return a / b;
+        }
+
+        function mostrarCalculos(a, b) {
+            let saida = document.getElementById("resultado");
+
+            saida.innerHTML += "<strong>Cálculos com " + a + " e " + b + ":</strong><br>";
+            saida.innerHTML += "Soma: " + somar(a, b) + "<br>";
+            saida.innerHTML += "Subtração: " + subtrair(a, b) + "<br>";
+            saida.innerHTML += "Multiplicação: " + multiplicar(a, b) + "<br>";
+            saida.innerHTML += "Divisão: " + dividir(a, b) + "<br><br>";
+        }
+
+        // 5 vezes, valores diferentes
+        mostrarCalculos(10, 2);
+        mostrarCalculos(20, 4);
+        mostrarCalculos(50, 5);
+        mostrarCalculos(100, 10);
+        mostrarCalculos(15, 3);
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+EXEMPLO COMPLETO EM HTML:
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Return com Condição</title>
+</head>
+<body>
+    <h1>📤 Return com Condição</h1>
+    <div id="saida"></div>
+
+    <script>
+        function verificarIdade(idade) {
+            if (idade >= 18) {
+                return "Maior de idade ✅";
+            } else {
+                return "Menor de idade ❌";
+            }
+        }
+
+        let saida = document.getElementById("saida");
+        saida.innerHTML += "Idade 20: " + verificarIdade(20) + "<br>";
+        saida.innerHTML += "Idade 15: " + verificarIdade(15) + "<br>";
+    </script>
+</body>
+</html>

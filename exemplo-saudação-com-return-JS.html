@@ -1,0 +1,35 @@
+EXEMPLO COMPLETO EM HTML:
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Saudação com Return</title>
+</head>
+<body>
+    <h1>💬 Saudação com Return</h1>
+    <div id="saida"></div>
+
+    <script>
+        function gerarSaudacao(nome) {
+            return "Olá, " + nome + "! Bem-vindo(a)!";
+        }
+
+        let saida = document.getElementById("saida");
+
+        // 1️⃣ Guardando em variável
+        let msg1 = gerarSaudacao("João");
+        saida.innerHTML += msg1 + "<br>";
+
+        // 2️⃣ Usando direto
+        saida.innerHTML += gerarSaudacao("Maria") + "<br>";
+
+        // 3️⃣ Usando em alert
+        // alert(gerarSaudacao("Pedro"));
+    </script>
+</body>
+</html>
+
+
+Saudação

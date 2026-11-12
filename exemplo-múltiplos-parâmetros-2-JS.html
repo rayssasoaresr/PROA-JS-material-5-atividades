@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Múltiplos Parâmetros</title>
+</head>
+<body>
+    <h1>📦 Múltiplos Parâmetros</h1>
+    
+    <!-- Onde as fichas vão aparecer -->
+    <div id="resultado" style="padding: 15px; background: #f3e5f5; border-radius: 10px; margin-top: 20px; font-size: 18px;"></div>
+
+    <script>
+        // ==========================================
+        // FUNÇÃO COM MÚLTIPLOS PARÂMETROS
+        // ==========================================
+        function apresentar(nome, idade, cidade) {
+            console.log("📋 FICHA CADASTRAL");
+            console.log("Nome:", nome);
+            console.log("Idade:", idade, "anos");
+            console.log("Cidade:", cidade);
+            console.log("---");
+            
+            // Retorna o HTML para mostrar na tela
+            return "📋 FICHA CADASTRAL<br>" +
+                   "Nome: " + nome + "<br>" +
+                   "Idade: " + idade + " anos<br>" +
+                   "Cidade: " + cidade + "<br>" +
+                   "---<br><br>";
+        }
+
+        // ==========================================
+        // CHAMANDO COM DIFERENTES ARGUMENTOS
+        // ==========================================
+        let resultado = document.getElementById("resultado");
+        
+        let html = "";
+        
+        html += apresentar("João", 25, "São Paulo");
+        html += apresentar("Maria", 30, "Rio de Janeiro");
+        html += apresentar("Pedro", 22, "Belo Horizonte");
+        
+        resultado.innerHTML = html;
+    </script>
+</body>
+</html>
+
+
+Múltiplos Parâmetros (HTML)
